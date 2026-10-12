@@ -69,3 +69,5 @@ h2 { margin: 0 0 6px; }
 .contact a { color: var(--muted); text-decoration: none; }
 .contact a:hover { color: var(--accent); }
 .now { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+.proj a.link .ico { width: 1.1em; height: 1.1em; vertical-align: -0.2em; margin-right: 2px; }
+.proj a.link + a.link { margin-left: 14px; }
