@@ -1,237 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samanta Bordallo</title>
-    <link rel="stylesheet" href="style.css">
-<style>@media print{.noprint{display:none!important}}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samanta Bordallo - CV</title>
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<p class="noprint" style="max-width:800px;margin:16px auto 0;padding:0 20px;display:flex;justify-content:space-between"><a href="./">← Home</a><a href="Samanta_Bordallo_CV.pdf" download>Download PDF</a></p>
 
-<header>
-    <h1>Samanta Uchôa Bordallo</h1>
+<nav class="topnav">
+  <a class="nav" href="./">&larr; Home</a>
+  <a class="nav" href="Samanta_Bordallo_CV.pdf" download>Download PDF</a>
+</nav>
+
+<main id="cv">
+
+<header class="cv-header">
+  <div class="cv-header-data">
+    <h1 class="name">Samanta Uchôa Bordallo</h1>
     <p class="role">DevOps Engineer</p>
-
-    <div class="contact">
-        <a href="mailto:bordallo.samanta@gmail.com">bordallo.samanta@gmail.com</a>
-        <span>•</span>
-        <span>+351 913 890 678</span>
-        <span>•</span>
-        <a href="https://github.com/samanta-bordallo" target="_blank">GitHub</a>
-        <span>•</span>
-        <a href="https://www.linkedin.com/in/samanta-bordallo-86805a117/" target="_blank">LinkedIn</a>
-    </div>
+    <p class="contact">
+      <a href="mailto:bordallo.samanta@gmail.com">bordallo.samanta@gmail.com</a> &nbsp;&nbsp;
+      (+351) 913 890 678
+    </p>
+    <p class="contact">
+      <a href="https://www.linkedin.com/in/samanta-bordallo-86805a117/" target="_blank" rel="noopener">linkedin.com/in/samanta-bordallo</a> &nbsp;&nbsp;
+      <a href="https://github.com/samanta-bordallo" target="_blank" rel="noopener">github.com/samanta-bordallo</a>
+    </p>
+    <p class="contact">Portuguese &amp; EU Work Permit</p>
+    <p class="contact">Leiria, Portugal</p>
+  </div>
+  <img class="cv-photo" src="photo.jpg" alt="Samanta Uchôa Bordallo">
 </header>
 
-<main>
+<h2 class="section">Summary</h2>
+<p class="summary">DevOps Engineer with one year of hands-on experience at Bosch automating software delivery with Python, YAML pipelines and Jenkinsfiles (Azure DevOps, Jenkins, GitLab). Experienced with containers (Docker), relational databases (PostgreSQL), REST API integration and troubleshooting pipeline and production failures. Looking for a DevOps role where I can deepen my skills in automation, containers and observability.</p>
 
-    <!-- SKILLS -->
+<h2 class="section">Main Skills</h2>
+<table class="main-skills">
+  <tbody><tr><td class="k">Automation &amp; CI/CD</td><td>Python, Bash, REST APIs, Azure DevOps Server, Jenkins, GitLab, YAML pipelines, Jenkinsfiles, Git</td></tr>
+  <tr><td class="k">Containers &amp; Data</td><td>Docker, Grafana, PostgreSQL, SQL Server, MySQL</td></tr>
+</tbody></table>
 
-    <section>
-    <h2>Skills</h2>
+<h2 class="section">Experience</h2>
 
-    <ul class="skills">
+<div class="entry">
+  <div class="entry-head"><span class="title">DevOps Engineer Intern</span><span class="date">Nov 2025 – Oct 2026</span></div>
+  <div class="entry-sub"><span class="org">Bosch Service Solutions — Ovar, Portugal (hybrid)</span></div>
+  <ul class="bullets">
+    <li>Automate a software release process previously done manually by developers, with Python scripts and Azure DevOps YAML pipelines using reusable templates.</li>
+    <li>Orchestrate release stages across GitLab (fork, merge request, merge and tag polling) and Jenkins jobs, using stage dependencies and self-hosted agent pools to run independent jobs in parallel.</li>
+    <li>Designed the pipeline to be idempotent: after an agent failure, reruns detect existing Jenkins builds and GitLab merge requests instead of duplicating work.</li>
+    <li>Troubleshoot pipeline and production failures to improve deployment speed and stability; gather requirements with developers and stakeholders and document complex release workflows.</li>
+  </ul>
+  <p class="entry-skills">Python · Azure DevOps · Jenkins · GitLab · YAML pipelines · PostgreSQL · Grafana · Docker</p>
+</div>
 
-        <li>
-            <strong>DevOps & CI/CD:</strong>
-            Azure DevOps, Jenkins, CI/CD Pipelines, Release Engineering,
-            Deployment Automation
-        </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">Python Developer Intern</span><span class="date">Aug 2024 – Nov 2024</span></div>
+  <div class="entry-sub"><span class="org">Playads.io — Leiria, Portugal</span></div>
+  <ul class="bullets">
+    <li>Developed Python scripts for web automation on platforms like Pinterest and Facebook, including image posting and data scraping.</li>
+    <li>Integrated AI APIs for automated image generation and manipulation.</li>
+    <li>Created prompts and optimized workflows for efficient task automation.</li>
+  </ul>
+  <p class="entry-skills">Python · web automation · AI APIs</p>
+</div>
 
-        <li>
-            <strong>Programming:</strong>
-            Python, C#, REST APIs
-        </li>
+<h2 class="section">Education</h2>
 
-        <li>
-            <strong>Cloud & Infrastructure:</strong>
-            Docker, Deployment Agents, Proxy Configuration,
-            Environment Management
-        </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">TETP in Information Systems (1500h)</span><span class="date">2023 – 2024</span></div>
+  <div class="entry-sub"><span class="org">Instituto do Emprego e Formação Profissional — Leiria, Portugal</span></div>
+</div>
 
-        <li>
-            <strong>Databases:</strong>
-            PostgreSQL, MySQL, SQL Server
-        </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">Postgraduate Specialization in Criminal Forensics &amp; Forensic Sciences (432h)</span><span class="date">2019 – 2021</span></div>
+  <div class="entry-sub"><span class="org">IPOG – Instituto de Pós-Graduação e Graduação — Brazil</span></div>
+</div>
 
-        <li>
-            <strong>Monitoring & Tools:</strong>
-            Grafana, Git, GitHub, Selenium
-        </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">Bachelor's Degree in Biological Sciences</span><span class="date">2015 – 2018</span></div>
+  <div class="entry-sub"><span class="org">Universidade Federal do Pará — Belém, Brazil</span></div>
+</div>
 
-        <li>
-            <strong>Methodologies:</strong>
-            Agile, Scrum, Kanban
-        </li>
+<div class="page2">
 
-    </ul>
-</section>
+<h2 class="section">Technical Competences</h2>
+<table class="main-skills">
+  <tr><td class="k">Automation</td><td>Python, Bash, REST APIs, Selenium</td></tr>
+  <tr><td class="k">CI/CD</td><td>GitLab, Azure DevOps Server, Jenkins, YAML pipelines, Jenkinsfiles, Git, GitHub</td></tr>
+  <tr><td class="k">Containers</td><td>Docker</td></tr>
+  <tr><td class="k">Observability</td><td>Grafana</td></tr>
+  <tr><td class="k">Databases</td><td>PostgreSQL, SQL Server, MySQL</td></tr>
+  <tr><td class="k">Other languages</td><td>C, C#, C++, HTML, CSS, JavaScript</td></tr>
+  <tr><td class="k">Methodologies</td><td>Agile (Scrum, Kanban)</td></tr>
+</table>
 
+<h2 class="section">Interpersonal Competences</h2>
+<table class="main-skills">
+  <tr><td class="k">Communication</td><td>Gather requirements with developers and stakeholders; document complex release workflows.</td></tr>
+  <tr><td class="k">Teamwork</td><td>Work with developers and stakeholders to automate shared release processes.</td></tr>
+  <tr><td class="k">Problem solving</td><td>Diagnose pipeline and production failures to improve deployment speed and stability.</td></tr>
+</table>
 
-    <!-- EXPERIENCE -->
+<h2 class="section">Languages</h2>
+<table class="main-skills">
+  <tr><td class="k">English</td><td>B2</td></tr>
+  <tr><td class="k">Portuguese</td><td>Native</td></tr>
+</table>
 
-    <section>
-        <h2>Experience</h2>
+<h2 class="section">Personal Projects</h2>
 
-        <div class="job">
+<div class="entry">
+  <div class="entry-head"><span class="title">Odoo 19 Installer</span></div>
+  <div class="entry-sub"><span class="org">Bash · Ubuntu · PostgreSQL</span><span class="link"><a href="https://github.com/samanta-bordallo/odoo19-installer" target="_blank" rel="noopener">github.com/samanta-bordallo/odoo19-installer</a></span></div>
+  <ul class="bullets">
+    <li>One-command script that sets up a from-source Odoo 19 development environment on Ubuntu: PostgreSQL, Python virtualenv and configuration.</li>
+    <li>Safe to re-run: it reuses existing clones and skips steps that are already done.</li>
+  </ul>
+</div>
 
-            <div class="job-header">
-                <div>
-                    <h3>Bosch Service Solutions</h3>
-                    <h4>DevOps Intern</h4>
-                </div>
-                <span>Nov 2025 - Nov 2026</span>
-            </div>
+<div class="entry">
+  <div class="entry-head"><span class="title">Personal Finance Observability</span></div>
+  <div class="entry-sub"><span class="org">Docker Compose · PostgreSQL · NocoDB · Grafana</span><span class="link"><a href="https://github.com/samanta-bordallo/personal-finance-observability" target="_blank" rel="noopener">github.com/samanta-bordallo/personal-finance-observability</a></span></div>
+  <ul class="bullets">
+    <li>Containerized stack with PostgreSQL for storage, NocoDB for data entry and Grafana for dashboards, with memory limits per service.</li>
+  </ul>
+</div>
 
-            <ul>
-                <li>
-                    Designed, built and maintained CI/CD pipelines using
-                    Azure DevOps and Jenkins.
-                </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">3mf-qr-card</span></div>
+  <div class="entry-sub"><span class="org">Python · 3MF · Claude Code skill</span><span class="link"><a href="https://github.com/samanta-bordallo/3mf-qr-card" target="_blank" rel="noopener">github.com/samanta-bordallo/3mf-qr-card</a></span></div>
+  <ul class="bullets">
+    <li>Generator for two-colour, 3D-printable QR-code cards that checks the code decodes before writing the file.</li>
+    <li>Used to print the cards I handed out at a job fair; documents what worked and what did not.</li>
+  </ul>
+</div>
 
-                <li>
-                    Developed Python automation solutions for development,
-                    deployment and release workflows.
-                </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">AI Image Generator</span></div>
+  <div class="entry-sub"><span class="org">Python · Flask · Stable Diffusion · NocoDB</span><span class="link"><a href="https://github.com/samanta-bordallo/ai-nocodb-image-generator" target="_blank" rel="noopener">github.com/samanta-bordallo/ai-nocodb-image-generator</a></span></div>
+  <ul class="bullets">
+    <li>Web app that generates images with Stable Diffusion v1.5, with prompts from NocoDB and a local fallback.</li>
+  </ul>
+</div>
 
-                <li>
-                    Managed deployment agents, containerized environments,
-                    proxies and infrastructure configurations.
-                </li>
+<h2 class="section">Complementary Training</h2>
 
-                <li>
-                    Investigated and resolved deployment failures,
-                    pipeline issues and production incidents.
-                </li>
+<div class="entry">
+  <div class="entry-head"><span class="title">Microsoft Office Specialist: Associate (Office 2019)</span><span class="date">2025</span></div>
+  <div class="entry-sub"><span class="org">Microsoft — Word, Excel and PowerPoint</span></div>
+</div>
 
-                <li>
-                    Improved software delivery reliability, release
-                    efficiency and operational stability.
-                </li>
-            </ul>
+<div class="entry">
+  <div class="entry-head"><span class="title">.NET Programming (350h)</span><span class="date">2023</span></div>
+</div>
+<div class="entry">
+  <div class="entry-head"><span class="title">Leadership and Coaching (25h)</span><span class="date">2025</span></div>
+</div>
+<div class="entry">
+  <div class="entry-head"><span class="title">Stress Management and Conflict Management (25h)</span><span class="date">2025</span></div>
+</div>
+<div class="entry">
+  <div class="entry-head"><span class="title">Leadership and Teamwork (25h)</span><span class="date">2025</span></div>
+</div>
 
-        </div>
-
-
-        <div class="job">
-
-            <div class="job-header">
-                <div>
-                    <h3>Playads.io</h3>
-                    <h4>Python Developer Intern</h4>
-                </div>
-                <span>2024</span>
-            </div>
-
-            <ul>
-                <li>
-                    Developed Python automation scripts for social media
-                    platforms including Pinterest and Facebook.
-                </li>
-
-                <li>
-                    Implemented web scraping solutions and automated
-                    publishing workflows.
-                </li>
-
-                <li>
-                    Integrated AI APIs for image generation
-                    and automation processes.
-                </li>
-
-                <li>
-                    Optimized repetitive business workflows
-                    through automation.
-                </li>
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- KEY PROJECTS -->
-
-    <section>
-        <h2>Key Projects</h2>
-
-        <div class="project">
-
-            <h3>Release Delivery Time Dashboard</h3>
-
-            <p>
-                Designed and developed a dashboard used to track
-                software release metrics and delivery performance.
-                Automated data collection, processing and visualization
-                to support engineering and management decisions.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Azure DevOps, Python, SQL, Grafana
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h3>CI/CD Pipeline Automation</h3>
-
-            <p>
-                Designed and implemented deployment pipelines,
-                reducing manual work and improving release consistency
-                across development workflows.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Azure DevOps, Jenkins, Git, Python
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h3>Development Workflow Automation</h3>
-
-            <p>
-                Developed Python tools for recurring DevOps and
-                engineering tasks, automating validation,
-                data processing and internal workflows.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, REST APIs, Docker
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h3>Production Incident & Pipeline Troubleshooting</h3>
-
-            <p>
-                Analyzed and resolved pipeline failures,
-                deployment issues and infrastructure-related incidents,
-                improving software delivery reliability.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Azure DevOps, Jenkins, Docker
-            </p>
-
-        </div>
-
-    </section>
-
+</div>
 </main>
-
 </body>
 </html>

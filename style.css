@@ -1,100 +1,135 @@
-:root {
-  --text: #1a1a1a;
-  --muted: #555;
-  --accent: #0070f3;
-  --line: #e5e5e5;
-}
-
+* { box-sizing: border-box; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #111;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
+  line-height: 1.35;
   background: #fff;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px 60px;
-  line-height: 1.6;
-  font-size: 15px;
 }
-
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 6px;
-  letter-spacing: -0.2px;
-}
-
-.location {
-  color: var(--muted);
-  margin-bottom: 4px;
-}
-
-.links a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-size: 17px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 12px;
-  padding-bottom: 2px;
-}
-
-ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.skills li {
-  margin-bottom: 4px;
-}
-
-.job {
-  margin-bottom: 20px;
-}
-
-.job-header {
+.topnav {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 22px;
+  font-family: Arial, sans-serif;
 }
-
-.job-header h3 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.date {
-  color: var(--muted);
+.topnav a {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
   font-size: 14px;
 }
+.topnav a.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+h1.name {
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin: 0 0 6px;
+  font-weight: bold;
+}
+.role {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #333;
+}
+.contact {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+.contact a { color: #1a4fa0; text-decoration: none; }
+.cv-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.cv-header-data { flex: 1; min-width: 0; }
+.cv-header .name, .cv-header .contact, .cv-header .role { text-align: left; }
+.cv-photo {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contact a:hover { text-decoration: underline; }
+h2.section {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2px;
+  margin: 22px 0 10px;
+}
+.summary { font-size: 14px; margin: 0; }
+table.main-skills { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.main-skills td { padding: 1px 0; vertical-align: top; }
+table.main-skills td.k { font-weight: bold; width: 165px; white-space: nowrap; }
+.entry-skills { font-size: 13px; font-style: italic; color: #444; margin: 3px 0 0; }
+.entry { margin-bottom: 14px; }
+.entry-head { display: flex; justify-content: space-between; font-size: 15px; }
+.entry-head .title { font-weight: bold; }
+.entry-head .date { font-style: normal; white-space: nowrap; }
+.entry-sub { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
+.entry-sub .org { font-style: normal; }
+.entry-sub .link a { color: #1a4fa0; text-decoration: none; }
+.entry-sub .link a:hover { text-decoration: underline; }
+ul.bullets { margin: 4px 0 0; padding-left: 18px; font-size: 14px; }
+ul.bullets li { margin-bottom: 2px; }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
+.editnote {
+  background: #fff8e1;
+  border: 1px solid #e3c766;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin: 14px 0;
+  color: #5a4a00;
 }
 
-a:hover {
-  text-decoration: underline;
+.placeholder {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #666;
+  margin-top: 80px;
+}
+.placeholder h2 { color: #333; }
+.topnav button {
+  padding: 6px 14px;
+  border: 1px solid #1a4fa0;
+  border-radius: 6px;
+  background: #1a4fa0;
+  color: #fff;
+  font-size: 14px;
+}
+.status { text-align: center; font-family: Arial, sans-serif; font-size: 13px; color: #555; min-height: 16px; margin: -12px 0 10px; }
+#cv [contenteditable="true"] { outline: 2px solid #e3a800; background: #fffbe6; }
+@page { size: A4; margin: 10mm 12mm; }
+@media print {
+  .topnav, .status { display: none; }
+  body { max-width: none; margin: 0; padding: 0; line-height: 1.25; zoom: 1.10; }
+  h2.section { margin: 10px 0 5px; }
+  .entry { margin-bottom: 7px; }
+  .cv-photo { width: 100px; height: 100px; }
+  ul.bullets { margin-top: 2px; }
+  ul.bullets li { margin-bottom: 0; }
+  .entry { break-inside: avoid; }
+  h2.section { break-after: avoid; }
 }
 
-p {
-  margin-top: 6px;
-  margin-bottom: 10px;
+/* Web view (cv.html on the portfolio): phone layout and page split when printing the site page */
+@media screen and (max-width: 640px) {
+  body { padding: 18px 16px 48px; }
+  .cv-header { flex-direction: column-reverse; align-items: flex-start; }
+  .entry-head, .entry-sub { flex-direction: column; }
+  .entry-sub .link { word-break: break-all; }
+  table.main-skills td.k { width: auto; white-space: normal; padding-right: 12px; }
 }
+@media print { .page2 { break-before: page; } }
